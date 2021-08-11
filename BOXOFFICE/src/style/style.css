@@ -31,3 +31,51 @@
 
 /* 컨테이너 */
 
+.cont-movie{
+    width: 1006px;
+    margin: 86px auto 0;
+    padding: 0 27px 29px;
+    border: 2px solid #BDBDBD;
+    border-radius: 15px;
+    background: #E5E5E5;
+}
+
+.cont-movie .tit-cont{
+    font-size: 24px;
+    text-align: center;
+    line-height: 28px;
+    padding: 38px 0;
+}
+
+/* nav 스타일 */
+.cont-movie .nav-movie {
+    text-align: center;
+}
+.cont-movie .nav-movie::before{
+    display: block;
+    content: '';
+    width: 650px;
+    height: 2px;
+    background: #BDBDBD;
+    margin: 0 auto;
+}
+.cont-movie .list-movieNav{
+    display: inline-block;
+    margin: 0 27px;
+}
+.cont-movie .list-movieNav li{
+    float: left;
+}
+.cont-movie .list-movieNav li+li{
+    margin-left: 60px;
+}
+/* +를 주면 li 옆에 있는 li만 영향을 받게 된다. */
+
+.cont-movie .list-movieNav .link-nav{
+    color: #828282;
+}
+
+.cont-movie .list-movieNav .on .link-nav{
+    color: #000;
+    font-weight: bold;
+}
