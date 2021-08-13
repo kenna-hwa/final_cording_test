@@ -1,0 +1,152 @@
+@charset "utf-8";
+
+/* 유틸리티 */
+/* 스크린리더에서만 읽을 수 있는  */
+.sr-only{
+    position:absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+/* style */
+
+section {
+    position: relative;
+    width: 1034px;
+    height: 635px;
+    top: 208px;
+    left: 601px;
+    padding-top: 63px;
+    padding-left: 103px;
+}
+
+.poster-cont {
+    position: absolute;
+    width: 281px;
+    height: 396px;
+    top: 115px;
+    left: 43px;
+    z-index: 10;
+}
+
+.poster-cont img{
+    width: inherit;
+    height: inherit;
+    border-radius: 10px;
+}
+
+.inner-cont{
+    position: relative;
+    width: 700px;
+    height: 500px;
+    background: #333;
+    padding-top: 64px;
+    padding-left: 266px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.inner-cont .content-cont {
+    position: absolute;
+}
+
+.inner-cont .content-cont .content-tit-cont .content-genre {
+    width: 140px;
+    height: 23px;
+    color: #bdbdbd;
+    margin-bottom: 13px;
+}
+
+.inner-cont .content-cont .content-tit-cont .content-genre p {
+    float: left;
+}
+
+.inner-cont .content-cont .content-tit-cont .content-genre p:nth-child(1)::after {
+    display: inline-block;
+    content:"";
+    width: 1px;
+    height: 14px;
+    background: #bdbdbd;
+    margin: 0 5px 0 5px;
+}
+
+.inner-cont .content-cont .content-tit-cont .content-tit {
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 114px;
+}
+
+.inner-cont .content-cont .user-cont {
+}
+
+.inner-cont .content-cont .user-cont .like-heart>li {
+    float: left;
+    margin-bottom: 22px;
+}
+
+.inner-cont .content-cont .user-cont .like-heart .like-circle {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    background: url(../images/thumbsup.png) no-repeat center;
+    background-size: 45%;
+    margin-right: 20px;
+}
+
+.inner-cont .content-cont .user-cont .like-heart .like-circle a {
+    display: block;
+    height: 100%;
+    font-size: 1px;
+    text-indent: -9999px;
+}
+
+.inner-cont .content-cont .user-cont .like-heart .heart-circle {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    background: url(../images/heart.png) no-repeat center;
+    background-size: 45%;
+}
+
+.inner-cont .content-cont .user-cont .like-heart .heart-circle a {
+    display: block;
+    height: 100%;
+    font-size: 1px;
+    text-indent: -9999px;
+}
+
+.inner-cont .content-cont .user-cont p {
+    clear: both;
+    color: #fff;
+    margin-bottom: 16px;
+}
+
+.inner-cont .content-cont .user-cont .star-box {
+}
+.inner-cont .content-cont .user-cont .star-box .stars {
+    float: left;
+
+}
+
+.inner-cont .content-cont .user-cont .star-box .stars li {
+    display: block;
+    width: 50px;
+    height: 50px;
+    float: left;
+    background: url(../images/아이콘_별_1.png) no-repeat;
+    background-size: contain;
+    text-indent: -9999px;
+}
+
+.inner-cont .content-cont .user-cont .star-box button {
+    width: 19px;
+    height: 19px;
+    float: left;
+    background: gray;
+}

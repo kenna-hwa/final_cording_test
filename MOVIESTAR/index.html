@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,40 +12,44 @@
     <link rel="stylesheet" href="./src/reset.css">
     <link rel="stylesheet" href="./src/style.css">
 </head>
-<body>
-    <div>
-        <div>
-            <section>
-                    <div>
-                        <img src="./images/포스터_부트캠프.jpg" alt="파이썬 부트캠프 얕은물" style="width: 300px; height: 400px;" />
-                    </div>
-                    <div>
-                        <h1>영화 소개</h1>
-                            <h2>영화 장르</h2>
-                            <h4>드라마</h4>
-                            <h4>전체이용가</h4>
 
-                        <h2>영화 제목</h2>
-                            <h3>파이썬 부트캠프</h3>
-                        <div>
-                            <h4>유저 메뉴</h4>
-                            <div>
-                                <a href="#none">좋아요</a>
-                                <a href="#none">하트</a>
-                            </div>
-                            <div>
-                                <p>별점 평균 4.5</p>
-                                <span>별</span>
-                                <span>별</span>
-                                <span>별</span>
-                                <span>별</span>
-                                <span>별</span>
-                                <button>취소하기</button>
-                            </div>
-                        </div>
+<body>
+   <section>
+       <h1 class="sr-only">영화 상세 정보</h1>
+       <article class="poster-cont">
+        <img src="./images/포스터_부트캠프.jpg" alt="파이썬 부트캠프 포스터">
+        </article>
+       <div class="inner-cont">
+           <article class="content-cont">
+                <div class="content-tit-cont">
+                    <div class="content-genre">
+                        <p>드라마</p>
+                        <p>전체이용가</p>
                     </div>
-            </section>
-        </div>
-    </div>
+                    <div class="content-tit">
+                        <h2>파이썬 부트캠프</h2>
+                    </div>
+                </div>
+                <div class="user-cont">
+                    <ul class="like-heart">
+                        <li class="like-circle"><a href="#none" class="like">좋아요</a></li>
+                        <li class="heart-circle"><a href="#none" class="heart">하트</a></li>
+                    </ul>
+                    <p>별점 평균 4.5</p>
+                    <div class="star-box">
+                        <ul class="stars">
+                            <li>별</li>
+                            <li>별</li>
+                            <li>별</li>
+                            <li>별</li>
+                            <li>별</li>
+                        </ul>
+                        <button>취소</button>
+                    </div>
+                </div>
+           </article>
+       </div>
+   </section>
 </body>
+
 </html>
