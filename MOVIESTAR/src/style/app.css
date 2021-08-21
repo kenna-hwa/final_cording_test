@@ -83,8 +83,12 @@ img {
     background: center / contain url(../images/icon_thumbs_up.png) no-repeat;
 }
 
+.button-recommend.on {
+    background-color: #2F80ED;
+}
+
 .button-recommend.on .icon-thumbs-up {
-    background-image: url(../assets/icon_thumbs_up_fill.png);
+    background-image: url(../images/icon_thumbs_up_fill.png);
 }
 
 .button-heart .icon-heart {
@@ -92,6 +96,10 @@ img {
     height: 22.6px;
     margin-top: 3px;
     background: center / contain url(../images/icon_heart.png) no-repeat;
+}
+
+.button-heart.on{
+    background-color: #EB5757;
 }
 
 .button-heart.on .icon-heart {
