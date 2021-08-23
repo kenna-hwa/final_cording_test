@@ -13,14 +13,15 @@ class Favorite {
     bindEvents(){
         // 이벤트 리스너 처리
         this.favoriteElement.addEventListener('click', (event)=>{
-            console.log(event.composedPath())
             // 리스너 함수
             const cPath = event.composedPath();
             // composedPath는 이벤트의 경로를 배열값으로 반환한다는 뜻
             // 상수 cPath를 선언하고 event 객체에 composedPath 설정
             // 이벤트 경로란 이벤트가 전파되는 경로
+
             const element = cPath.find(element => element.tagName == "BUTTON")
-            // 배열 cPath에 find 함수를 이용해 find 함수 안에 함수의 조건을 통화한 것만 Element에 담기도록 한다. 
+            // 배열 cPath에 find 함수를 이용해 find 함수 안에 함수의 조건을 통화한 것만 Element에 담기도록 한다.
+
             if(!element){
                 return;
             }

@@ -77,10 +77,12 @@ img {
 }
 
 .button-recommend .icon-thumbs-up {
+    overflow: hidden;
     width: 23.8px;
     height: 23.8px;
     margin-top: -1px;
     background: center / contain url(../images/icon_thumbs_up.png) no-repeat;
+    text-indent: -9999px;
 }
 
 .button-recommend.on {
@@ -92,10 +94,12 @@ img {
 }
 
 .button-heart .icon-heart {
+    overflow: hidden;
     width: 22.6px;
     height: 22.6px;
     margin-top: 3px;
     background: center / contain url(../images/icon_heart.png) no-repeat;
+    text-indent: -9999px;
 }
 
 .button-heart.on{
